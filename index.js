@@ -4,10 +4,10 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 
-require("./startup/routes")(app);
-require("./startup/config")();
 require("./startup/db")();
+require("./startup/config")();
 require("./startup/validation")();
+require("./startup/routes")(app);
 
 const config = require("config");
 const port = process.env.PORT || config.get("port");
