@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+config/default.json
+logfile.log
+seed.js
+tests/
+test.json
