@@ -1,4 +1,4 @@
 {
-	"jwtPrivateKey": "JWTPrivateKey",
-	"db": "URI"
+	"jwtPrivateKey": "process.env.JWTPrivateKey",
+	"db": "process.env.URI"
 }
