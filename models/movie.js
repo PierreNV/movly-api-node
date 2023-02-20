@@ -27,6 +27,10 @@ const Movie = mongoose.model(
 			min: 0,
 			max: 255,
 		},
+		liked: {
+			type: Boolean,
+			required: true,
+		},
 	})
 );
 
@@ -36,6 +40,7 @@ function validateMovie(movie) {
 		genreId: Joi.objectId(),
 		numberInStock: Joi.number().min(0),
 		dailyRentalRate: Joi.number().min(0),
+		liked: Joi.boolean(),
 	});
 	const { error } = schema.validate(movie);
 	if (error) console.log(error);
