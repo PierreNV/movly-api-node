@@ -7,19 +7,23 @@ const Movie = mongoose.model(
 	new mongoose.Schema({
 		title: {
 			type: String,
+			required: true,
 			trim: true,
 			maxlength: 50,
 		},
 		genre: {
 			type: genreSchema,
+			required: true,
 		},
 		numberInStock: {
 			type: Number,
+			required: true,
 			min: 0,
 			max: 255,
 		},
 		dailyRentalRate: {
 			type: Number,
+			required: true,
 			min: 0,
 			max: 255,
 		},
