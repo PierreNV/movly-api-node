@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
 logfile.log
-test.json
-config/default.json
-config/test.json
+/test.json
+/config/default.json
+/config/test.json
